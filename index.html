@@ -1,0 +1,33 @@
+<html>
+<meta charset="utf8" />
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/light.css" />
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+
+</head>
+<body>
+<h1>sl-select keydown bug demo</h1>
+
+<form name="someform" submit="e => { e.preventDefault(); }">
+
+<div>
+  <sl-input name="somevalue" label="Some value:" />
+</div>
+
+<div>
+<sl-select name="trouble" value="1" label="I will cause trouble!" />
+  <sl-option value="1">Option 1</sl-option>
+  <sl-option value="2">Option 2</sl-option>
+  <sl-option value="3">Option 3</sl-option>
+</sl-select>
+</div>
+
+<div>
+  <sl-button type="submit">Submit</sl-button>
+  <sl-button type="reset">Reset</sl-button>
+</div>
+
+</form>
+
+</body>
+</html>
